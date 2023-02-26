@@ -1,7 +1,6 @@
 import tkinter as tk
 import situationGame
 
-situationGame.actions
 # initialize Tkinter window
 window = tk.Tk()
 window.geometry("300x150")
@@ -32,7 +31,7 @@ def update_output():
     
 
     
-
+# destroy game and Quit game
 def quit_game():
     window.destroy()
 
