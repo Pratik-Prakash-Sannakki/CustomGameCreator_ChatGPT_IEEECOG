@@ -37,8 +37,6 @@ outcomes = {
     },
     "explore the garden": {
         "text": "You wander around the garden, admiring the colorful flowers and sculptures.",
-        "location": "You're back in the garden.",
-        "actions": ["jump in the pond", "explore the garden"]
     },
     "read a book": {
         "text": "You pick up a dusty old tome and start reading...",
@@ -57,7 +55,13 @@ outcomes = {
     }
 }
 
-# Start the game loop
+
+
+
+
+
+# Start the game loo
+'''
 while True:
     # Print the current location and available actions
     print_with_delay(location)
@@ -75,3 +79,4 @@ while True:
     print_with_delay(outcomes[choice]["text"])
     location = outcomes[choice]["location"]
     actions = outcomes[choice]["actions"]
+'''

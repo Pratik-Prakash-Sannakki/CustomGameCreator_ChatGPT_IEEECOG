@@ -16,9 +16,9 @@ pygame.init()
 screen = pygame.display.set_mode((800, 600))
 
 # Your OpenAI API key
-with open("C:/sweta/api-key.txt") as f:
-    openai_api_key = f.read().strip()
-
+#with open("C:\Users\Pratik's Predator\Documents\CustomGameCreator_ChatGPT_IEEECOG/apikey.txt") as f:
+    #openai_api_key = f.read().strip()
+openai_api_key ="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"
 
 # Ask the user for the type of game they want to create
 game_type = input("Enter the type of game you want to create (e.g. platformer, shooter, puzzle): ")
@@ -31,7 +31,7 @@ response = requests.post(
         "Authorization": f"Bearer {openai_api_key}",
     },
     json={
-        "prompt": f"Build a {game_type} game with the following elements:",
+        "prompt": f"genearte python code for {game_type}",
         "max_tokens": 100,
         "n": 1,
         "temperature": 0.5,
@@ -40,7 +40,7 @@ response = requests.post(
 
 # Extract the game description from the API response
 #game_description = response.json()["choices"][0]["text"].strip()
-
+print(response.json())
 game_description = response.json()["choices"][0]["text"]
 
 # Print the generated game description
