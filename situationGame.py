@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Feb 24 16:38:49 2023
 
-@author: sweta
-"""
 
 import time
 
